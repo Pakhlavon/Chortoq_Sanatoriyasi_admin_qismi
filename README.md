@@ -1,0 +1,1 @@
+# Chortoq_Sanatoriyasi_admin_qismi
