@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddgalleryActivity"
+    android:background="@drawable/fon1">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/gallery_add_image"
+        android:layout_weight="3"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/image"
+        />
+    <EditText
+        android:id="@+id/rasm_name"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gallery_add_image"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:textColorHint="@color/fon"
+        android:hint="Rasm nomi..."
+        android:textColor="@color/fon"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="45sp"
+        android:layout_marginRight="45sp"
+        android:background="@drawable/buttons_design"
+        />
+
+    <EditText
+        android:layout_weight="3"
+        android:id="@+id/rasm_descriontion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rasm_name"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="Rasm haqida ma'lumot..."
+        android:layout_marginLeft="45sp"
+        android:layout_marginRight="45sp"
+        android:background="@drawable/buttons_design"
+        android:textColorHint="@color/fon"
+        android:textColor="@color/fon"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_weight="2"
+        android:id="@+id/add_new_rasm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rasm_descriontion"
+        android:text="Rasmni Qo'shish"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:padding="17dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+
+        />
+
+    </LinearLayout>
+</RelativeLayout>

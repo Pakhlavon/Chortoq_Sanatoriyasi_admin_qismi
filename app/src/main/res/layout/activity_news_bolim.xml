@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsBolimActivity"
+    android:background="@drawable/fon1"
+    >
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+        <Button
+            android:id="@+id/btn_add_new"
+            android:layout_weight="5"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="200dp"
+            android:text="News qo'shish"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            />
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/btn_ochir_new"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:layout_marginLeft="15dp"
+            android:text="O'chirish"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

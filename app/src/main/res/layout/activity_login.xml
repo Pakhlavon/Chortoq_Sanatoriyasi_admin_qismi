@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/fon2">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/asosiy"
+        />
+
+    <EditText
+        android:id="@+id/et_login"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="number"
+        android:background="@drawable/buttons_design"
+        android:hint="Telefon raqamni kiriting"
+        android:paddingLeft="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/fon"
+        android:textColorHint="@color/fon"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_parol"
+        android:layout_below="@+id/et_login"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:hint="Parolni kiriting"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textColor="@color/fon"
+        android:textSize="20dp"
+        android:textColorHint="@color/fon"
+        android:layout_height="65dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/buttons_design"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Log In"
+        android:layout_below="@id/et_parol"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/buttons"
+        />
+
+
+</RelativeLayout>

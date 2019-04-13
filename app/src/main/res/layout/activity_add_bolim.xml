@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBolimActivity"
+    android:background="@drawable/fon2">
+
+    <ImageView
+        android:id="@+id/select_image"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/image"
+        />
+    <EditText
+        android:id="@+id/bolim_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_image"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:textColorHint="@color/fon"
+        android:hint="Bo'lim nomi..."
+        android:textColor="@color/fon"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="45sp"
+        android:layout_marginRight="45sp"
+        android:background="@drawable/buttons_design"
+        />
+
+    <EditText
+        android:id="@+id/bolim_descriontion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bolim_name"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="Bo'lim haqida ma'lumot..."
+        android:layout_marginLeft="45sp"
+        android:layout_marginRight="45sp"
+        android:background="@drawable/buttons_design"
+        android:textColorHint="@color/fon"
+        android:textColor="@color/fon"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/add_new_bolim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bolim_descriontion"
+        android:text="Bo'limni Qo'shish"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:padding="17dp"
+        android:layout_marginTop="25dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+
+        />
+
+</RelativeLayout>
